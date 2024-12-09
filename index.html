@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST-COUNTRES-API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Fontawesome/css/all.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>Where in the World?</h2>
+
+        <span id="mode-switcher">
+            <i class="fa-regular fa-moon" id="theme-switch"></i>
+            <p>Dark Mode</p>
+        </span>
+    </nav>
+
+    <div class="container">
+        
+        <!-- -----------Search and Filter Bar----------- -->
+        <div class="specs">
+            <form action="" class="searchbar">
+                <button type="button" id="searchBtn">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+
+                <input type="text" id="searchInput" placeholder="Search for a country...">
+            </form>
+
+            <div class="filter">
+                <button id="filterBtn">
+                    <p id="filtertext">Filter by Region</p>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <ul id="filterList" class=" ">
+                    <li class="filterItem">Africa</li>
+                    <li class="filterItem">Americas</li>
+                    <li class="filterItem">Asia</li>
+                    <li class="filterItem">Europe</li>
+                    <li class="filterItem">Oceania</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="displayCountries">
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
